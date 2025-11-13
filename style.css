@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "sans-serif";
+}
+
+a {
+  text-decoration: none;
+}
+
+#Header {
+  padding: 1rem 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
+  width: 100%;
+  position: sticky;
+  top: 0px;
+}
+#Header .container .header-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Header .container .header-all .left .logo-div {
+  width: 200px;
+}
+#Header .container .header-all .left .logo-div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#Header .container .header-all .right .navbar {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+#Header .container .header-all .right .navbar li a {
+  font-size: 18px;
+  color: #373737;
+}
+#Header .container .header-all .right .navbar li a.header-phone {
+  background-color: #0F70B7;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+#Header .container .header-all .right .navbar li a.header-quote {
+  background-color: #E30713;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+#Intro {
+  background-image: url(fixcenterintrotestimage.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 750px;
+}
+#Intro .floating-div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Intro .floating-div .floating-content {
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 12px;
+}
+#Intro .floating-div .floating-content .text-div {
+  display: flex;
+  flex-direction: column;
+}
+#Intro .floating-div .floating-content .text-div span {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #E30713;
+}
+#Intro .floating-div .floating-content .text-div h2 {
+  color: #0F70B7;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+#Intro .floating-div .floating-content .text-div p {
+  font-size: 16px;
+  color: grey;
+  margin-bottom: 10px;
+}
+#Intro .floating-div .floating-content .appointment {
+  padding: 20px 0;
+}
+#Intro .floating-div .floating-content .appointment .floating-appointment-btn {
+  display: inline-block;
+  background-color: #E30713;
+  color: #fff;
+  padding: 16px 16px;
+  border-radius: 8px;
+}/*# sourceMappingURL=style.css.map */
