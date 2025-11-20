@@ -16,6 +16,7 @@ a {
           backdrop-filter: blur(24px);
   width: 100%;
   position: sticky;
+  z-index: 99;
   top: 0px;
 }
 #Header .container .header-all {
@@ -55,7 +56,7 @@ a {
 }
 
 #Intro {
-  background-image: url(fixcenterintrotestimage.webp);
+  background-image: url(fixcenter-introback.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -71,7 +72,7 @@ a {
 }
 #Intro .floating-div .floating-content {
   padding: 20px;
-  max-width: 600px;
+  max-width: 700px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -90,7 +91,7 @@ a {
 }
 #Intro .floating-div .floating-content .text-div h2 {
   color: #0F70B7;
-  font-size: 22px;
+  font-size: 32px;
   margin-bottom: 10px;
 }
 #Intro .floating-div .floating-content .text-div p {
@@ -99,12 +100,955 @@ a {
   margin-bottom: 10px;
 }
 #Intro .floating-div .floating-content .appointment {
-  padding: 20px 0;
+  padding: 20px 0 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 #Intro .floating-div .floating-content .appointment .floating-appointment-btn {
   display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #E30713;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+#Intro .floating-div .floating-content .appointment .floating-appointment-btn img {
+  width: 30px;
+  height: 30px;
+}
+#Intro .floating-div .floating-content .appointment .floating-phone-btn {
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #0F70B7;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+#Intro .floating-div .floating-content .appointment .floating-phone-btn img {
+  width: 30px;
+  height: 30px;
+}
+#Intro .floating-div .floating-content .small-items {
+  border-top: 1px solid #dfdfdf;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 0 0;
+}
+#Intro .floating-div .floating-content .small-items .item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#Intro .floating-div .floating-content .small-items .item img {
+  width: 20px;
+  height: 20px;
+}
+#Intro .floating-div .floating-content .small-items .item span {
+  color: rgb(90, 90, 90);
+}
+
+#Testimonials {
+  padding: 3rem 0 1rem 0;
+}
+#Testimonials .container .all .top {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+#Testimonials .container .all .top h2 {
+  font-size: 42px;
+}
+#Testimonials .container .all .top span {
+  margin-top: 20px;
+  display: inline-block;
+  color: gray;
+  max-width: 900px;
+}
+#Testimonials .container .all .bottom {
+  padding: 1rem 0 3rem 0;
+}
+#Testimonials .container .all .bottom .reviewcard {
+  border: 1px solid hsl(0, 0%, 89.8%);
+  background-color: #F8F8F8;
+  padding: 5px 20px;
+  border-radius: 8px;
+}
+#Testimonials .container .all .bottom .reviewcard .review-content {
+  display: flex;
+  flex-direction: column;
+}
+#Testimonials .container .all .bottom .reviewcard .review-content .stars-div {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 0;
+}
+#Testimonials .container .all .bottom .reviewcard .review-content .stars-div .star-div {
+  width: 25px;
+  height: 25px;
+}
+#Testimonials .container .all .bottom .reviewcard .review-content .stars-div .star-div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#Testimonials .container .all .bottom .reviewcard .review-content .feedback-div {
+  padding: 0 0 15px 0;
+}
+#Testimonials .container .all .bottom .reviewcard .review-content .feedback-div .feedback {
+  font-size: 18px;
+}
+#Testimonials .container .all .bottom .reviewcard .review-content .commenter {
+  padding: 15px 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-top: 1px solid #dfdfdf;
+}
+#Testimonials .container .all .bottom .reviewcard .review-content .commenter .commenter-picture-div {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Testimonials .container .all .bottom .reviewcard .review-content .commenter .commenter-picture-div img:first-child {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+}
+#Testimonials .container .all .bottom .reviewcard .review-content .commenter .commenter-picture-div img:last-child {
+  background-color: #f8f8f8;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: -5px;
+  right: -5px;
+  border-radius: 50%;
+}
+#Testimonials .container .all .bottom .reviewcard .review-content .commenter .commenter-picture-div img:last-child img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#Testimonials .container .all .bottom .reviewcard .review-content .commenter .commenter-info-div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#Testimonials .container .all .bottom .reviewcard .review-content .commenter .commenter-info-div span:first-child {
+  font-weight: bold;
+  font-size: 22px;
+}
+#Testimonials .container .all .bottom .reviews-details {
+  margin-top: 20px;
+  width: 100%;
+  padding: 30px 0;
+  border: 1px solid hsl(0, 0%, 89.8%);
+  background-color: #F8F8F8;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 160px;
+}
+#Testimonials .container .all .bottom .reviews-details .review-detail-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Testimonials .container .all .bottom .reviews-details .review-detail-div span:first-child {
+  font-size: 44px;
+  font-weight: bold;
+  color: #0F70B7;
+}
+
+#AboutUs {
+  padding: 3rem 0;
+}
+#AboutUs .container .top {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+#AboutUs .container .top h2 {
+  font-size: 42px;
+}
+#AboutUs .container .top span {
+  margin-top: 20px;
+  display: inline-block;
+  color: gray;
+  max-width: 1100px;
+}
+#AboutUs .container .bottom {
+  padding: 0 5rem;
+}
+#AboutUs .container .bottom .swiper-aboutus {
+  overflow: hidden;
+  position: relative;
+}
+#AboutUs .container .bottom .swiper-aboutus .swiper-wrapper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 600px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+#AboutUs .container .bottom .swiper-aboutus .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#Appointment {
+  background-color: #F4F8FD;
+  padding: 3rem 0;
+}
+#Appointment .top {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+#Appointment .top h2 {
+  font-size: 42px;
+}
+#Appointment .top span {
+  margin-top: 20px;
+  display: inline-block;
+  color: gray;
+  max-width: 500px;
+}
+#Appointment .bottom .container .appointment-content {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+#Appointment .bottom .container .appointment-content .left {
+  max-width: 800px;
+  flex: 1;
+}
+#Appointment .bottom .container .appointment-content .left .appointment-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+#Appointment .bottom .container .appointment-content .left .appointment-card .title-div {
+  padding: 16px 0 36px 0;
+}
+#Appointment .bottom .container .appointment-content .left .appointment-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#Appointment .bottom .container .appointment-content .left .appointment-card form .name-div,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .phone-div,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .email-div,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .serviceneeded-div,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .address-div,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .city-div,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .state-div,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .zip-div,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .message-div {
+  display: flex;
+  flex-direction: column;
+}
+#Appointment .bottom .container .appointment-content .left .appointment-card form .name-div label,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .phone-div label,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .email-div label,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .serviceneeded-div label,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .address-div label,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .city-div label,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .state-div label,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .zip-div label,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .message-div label {
+  margin-bottom: 5px;
+}
+#Appointment .bottom .container .appointment-content .left .appointment-card form .name-div input, #Appointment .bottom .container .appointment-content .left .appointment-card form .name-div textarea, #Appointment .bottom .container .appointment-content .left .appointment-card form .name-div select,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .phone-div input,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .phone-div textarea,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .phone-div select,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .email-div input,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .email-div textarea,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .email-div select,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .serviceneeded-div input,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .serviceneeded-div textarea,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .serviceneeded-div select,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .address-div input,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .address-div textarea,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .address-div select,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .city-div input,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .city-div textarea,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .city-div select,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .state-div input,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .state-div textarea,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .state-div select,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .zip-div input,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .zip-div textarea,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .zip-div select,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .message-div input,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .message-div textarea,
+#Appointment .bottom .container .appointment-content .left .appointment-card form .message-div select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #dfdfdf;
+  resize: none;
+}
+#Appointment .bottom .container .appointment-content .left .appointment-card form .address-details, #Appointment .bottom .container .appointment-content .left .appointment-card form .name-and-phone-div {
+  display: flex;
+  gap: 10px;
+}
+#Appointment .bottom .container .appointment-content .left .appointment-card form .address-details div, #Appointment .bottom .container .appointment-content .left .appointment-card form .name-and-phone-div div {
+  flex: 1;
+}
+#Appointment .bottom .container .appointment-content .left .appointment-card form button {
+  background-color: #0F70B7;
+  color: #fff;
+  padding: 16px 0;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  font-size: 22px;
+}
+#Appointment .bottom .container .appointment-content .left .appointment-card form .savemore .savemore-item-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#Appointment .bottom .container .appointment-content .left .appointment-card form .savemore .savemore-item-div .savemore-item {
+  padding-top: 10px;
+}
+#Appointment .bottom .container .appointment-content .left .appointment-card form .savemore .savemore-item-div .savemore-item label {
+  border: 1px solid #dfdfdf;
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: 0.4s;
+}
+#Appointment .bottom .container .appointment-content .left .appointment-card form .savemore .savemore-item-div .savemore-item label input {
+  cursor: pointer;
+}
+#Appointment .bottom .container .appointment-content .left .appointment-card form .savemore .savemore-item-div .savemore-item label svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+#Appointment .bottom .container .appointment-content .left .appointment-card form .savemore .savemore-item-div .savemore-item label:has(input:checked) {
+  border-color: #0F70B7;
+  background-color: #EFF6FF;
+}
+#Appointment .bottom .container .appointment-content .right {
+  max-width: 400px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+#Appointment .bottom .container .appointment-content .right .contact-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px 16px 1rem 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#Appointment .bottom .container .appointment-content .right .contact-card .title-div {
+  padding: 1rem 0;
+}
+#Appointment .bottom .container .appointment-content .right .contact-card .title-div span {
+  font-size: 22px;
+  font-weight: bold;
+}
+#Appointment .bottom .container .appointment-content .right .contact-card .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#Appointment .bottom .container .appointment-content .right .contact-card .contact-item .icon-div {
+  background-color: #DBEAFE;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+}
+#Appointment .bottom .container .appointment-content .right .contact-card .contact-item .icon-div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#Appointment .bottom .container .appointment-content .right .contact-card .contact-item .item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#Appointment .bottom .container .appointment-content .right .contact-card .contact-item .item-details span {
+  font-weight: bold;
+}
+#Appointment .bottom .container .appointment-content .right .contact-card .contact-item .item-details ul, #Appointment .bottom .container .appointment-content .right .contact-card .contact-item .item-details li {
+  list-style: none;
+  color: #4b5563;
+}
+#Appointment .bottom .container .appointment-content .right .map-card {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 5px;
+}
+#Appointment .bottom .container .appointment-content .right .map-card #map, #Appointment .bottom .container .appointment-content .right .map-card gmp-map {
+  width: 100%;
+  height: 415px;
+}
+#Services {
+  padding: 3rem 0;
+}
+#Services .container .top {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+#Services .container .top h2 {
+  font-size: 42px;
+}
+#Services .container .top span {
+  margin-top: 20px;
+  display: inline-block;
+  color: gray;
+  max-width: 900px;
+}
+#Services .container .bottom {
+  padding: 2rem 0 0 0;
+}
+#Services .container .bottom .appliance-services .service-card {
+  border: 2px solid #DBEAFE;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 16px;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#Services .container .bottom .appliance-services .service-card .svg-div {
+  height: 100px;
+  width: 100px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #EFF6FF;
+  transition: 0.4s;
+}
+#Services .container .bottom .appliance-services .service-card .svg-div svg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  fill: gray;
+}
+#Services .container .bottom .appliance-services .service-card .name-div {
+  text-align: center;
+  width: 100%;
+}
+#Services .container .bottom .appliance-services .service-card .name-div span {
+  font-size: 26px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+#Services .container .bottom .appliance-services .service-card:hover {
+  border-color: #E30713;
+  scale: 1.05;
+}
+#Services .container .bottom .appliance-services .service-card:hover .svg-div {
+  background-color: #FEE2E2;
+}
+#Services .container .bottom .appliance-services .service-card:hover .svg-div svg {
+  fill: #E30713;
+}
+#RepairProcess {
+  background-color: #F4F8FD;
+  padding: 3rem 0;
+}
+#RepairProcess .container .top {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+#RepairProcess .container .top h2 {
+  font-size: 42px;
+}
+#RepairProcess .container .bottom .row .col-lg-3 .process-card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 270px;
+  border: 2px solid #EFF6FF;
+  transition: 0.4s;
+}
+#RepairProcess .container .bottom .row .col-lg-3 .process-card .process-step {
+  padding: 12px;
+  background-color: #EFF6FF;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+#RepairProcess .container .bottom .row .col-lg-3 .process-card .process-step span {
+  transition: 0.4s;
+  font-size: 40px;
+  color: #0F70B7;
+}
+#RepairProcess .container .bottom .row .col-lg-3 .process-card:hover {
+  border-color: #F1C5C9;
+}
+#RepairProcess .container .bottom .row .col-lg-3 .process-card:hover .process-step {
+  background-color: #F1C5C9;
+}
+#RepairProcess .container .bottom .row .col-lg-3 .process-card:hover .process-step span {
+  color: #E30713;
+}
+#RepairProcess .container .bottom .row .col-lg-3 .process-card .text-div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#RepairProcess .container .bottom .row .col-lg-3 .process-card .text-div span {
+  font-size: 22px;
+}
+
+#Savemore {
+  background-color: #F4F8FD;
+  padding: 3rem 0;
+}
+#Savemore .container .top {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+#Savemore .container .top h2 {
+  font-size: 42px;
+}
+#Savemore .container .top span {
+  margin-top: 20px;
+  display: inline-block;
+  color: gray;
+  max-width: 900px;
+}
+#Savemore .container .bottom .row .col-lg-4 .save-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 22px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#Savemore .container .bottom .row .col-lg-4 .save-card .icon-div {
+  margin-bottom: 10px;
+}
+#Savemore .container .bottom .row .col-lg-4 .save-card .icon-div svg {
+  width: 70px;
+  height: 70px;
+}
+#Savemore .container .bottom .row .col-lg-4 .save-card .title {
+  font-size: 26px;
+  font-weight: bold;
+}
+#Savemore .container .bottom .row .col-lg-4 .save-card .description {
+  color: gray;
+  text-align: center;
+  width: 70%;
+  font-size: 20px;
+}
+#Savemore .container .bottom .row .col-lg-4 .save-card button {
   background-color: #E30713;
   color: #fff;
   padding: 16px 16px;
   border-radius: 8px;
+  border: none;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: bold;
+}
+#Savemore .container .savemore-note {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 1rem;
+  font-size: 18px;
+  color: gray;
+}
+
+#BrandsWeRepair {
+  padding: 3rem 0;
+}
+#BrandsWeRepair .container .top {
+  width: 100%;
+  text-align: center;
+  padding: 0 0 3rem 0;
+}
+#BrandsWeRepair .container .top h2 {
+  font-size: 42px;
+}
+#BrandsWeRepair .container .bottom {
+  display: flex;
+  justify-content: center;
+}
+#BrandsWeRepair .container .bottom .brands-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 20px;
+  gap: 20px;
+  max-width: 70%;
+}
+#BrandsWeRepair .container .bottom .brands-div .brand-item {
+  width: 200px;
+}
+#BrandsWeRepair .container .bottom .brands-div .brand-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: grayscale(1);
+  transition: 0.4s;
+}
+#BrandsWeRepair .container .bottom .brands-div .brand-item:hover img {
+  filter: grayscale(0);
+  scale: 1.2;
+}
+
+#FAQ {
+  padding: 3rem 0;
+}
+#FAQ .container .top {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+#FAQ .container .top h2 {
+  font-size: 42px;
+}
+#FAQ .container .top span {
+  margin-top: 20px;
+  display: inline-block;
+  color: gray;
+  max-width: 900px;
+}
+#FAQ .container .bottom .faq-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+#FAQ .container .bottom .faq-questions .faq-question {
+  max-width: 70%;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.4s;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#FAQ .container .bottom .faq-questions .faq-question .question-answer .question span {
+  font-size: 20px;
+  font-weight: bold;
+}
+#FAQ .container .bottom .faq-questions .faq-question .question-answer .answer {
+  transition: 0.4s;
+  height: 0px;
+  color: gray;
+  overflow: hidden;
+}
+#FAQ .container .bottom .faq-questions .faq-question .question-answer .answer.show {
+  margin-top: 20px;
+}
+#FAQ .container .bottom .faq-questions .faq-question .icon-div {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+}
+#FAQ .container .bottom .faq-questions .faq-question .icon-div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#ServiceAreas {
+  padding: 3rem 0;
+}
+#ServiceAreas .container .top {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+#ServiceAreas .container .top h2 {
+  font-size: 42px;
+}
+#ServiceAreas .container .bottom {
+  display: flex;
+  gap: 30px;
+}
+#ServiceAreas .container .bottom .left {
+  flex: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 5px;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#ServiceAreas .container .bottom .left #map2 {
+  width: 100%;
+  height: 100%;
+}
+#ServiceAreas .container .bottom .right {
+  flex: 1;
+}
+#ServiceAreas .container .bottom .right .description {
+  font-size: 18px;
+  color: gray;
+  margin-bottom: 40px;
+}
+#ServiceAreas .container .bottom .right .serviceareas .row {
+  row-gap: 20px;
+}
+#ServiceAreas .container .bottom .right .serviceareas .row .col-lg-6 .servicearea-card {
+  border-radius: 8px;
+  background-color: #EFF6FF;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  transition: 0.4s;
+}
+#ServiceAreas .container .bottom .right .serviceareas .row .col-lg-6 .servicearea-card .icon-div {
+  width: 30px;
+  height: 30px;
+}
+#ServiceAreas .container .bottom .right .serviceareas .row .col-lg-6 .servicearea-card .icon-div svg {
+  width: 100%;
+  height: 100%;
+  fill: "#0F70B7";
+}
+#ServiceAreas .container .bottom .right .serviceareas .row .col-lg-6 .servicearea-card .name span {
+  font-size: 18px;
+  font-weight: bold;
+}
+#ServiceAreas .container .bottom .right .serviceareas .row .col-lg-6 .servicearea-card:hover {
+  background-color: #bdd8fc;
+}
+#ServiceAreas .container .bottom .right .locationnotfound-div {
+  display: flex;
+  border: 2px solid #0F70B7;
+  border-radius: 8px;
+  margin-top: 20px;
+  background-color: #EFF6FF;
+  padding: 16px;
+  gap: 20px;
+}
+#ServiceAreas .container .bottom .right .locationnotfound-div .icon-div {
+  width: 50px;
+  height: 50px;
+}
+#ServiceAreas .container .bottom .right .locationnotfound-div .icon-div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#ServiceAreas .container .bottom .right .locationnotfound-div .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#ServiceAreas .container .bottom .right .locationnotfound-div .texts .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+#ServiceAreas .container .bottom .right .locationnotfound-div .texts .text {
+  font-size: 16px;
+  color: gray;
+}
+
+#Message {
+  padding: 3rem 0 5rem 0;
+  background-color: #F4F8FD;
+}
+#Message .container .top {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+#Message .container .top h2 {
+  font-size: 42px;
+}
+#Message .container .top span {
+  margin-top: 20px;
+  display: inline-block;
+  color: gray;
+  max-width: 900px;
+}
+#Message .container .bottom {
+  display: flex;
+  justify-content: center;
+}
+#Message .container .bottom .message-card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 1000px;
+}
+#Message .container .bottom .message-card .message-div,
+#Message .container .bottom .message-card .name-div,
+#Message .container .bottom .message-card .zip-div,
+#Message .container .bottom .message-card .email-div,
+#Message .container .bottom .message-card .phone-div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+#Message .container .bottom .message-card .name-zipcode,
+#Message .container .bottom .message-card .email-phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+#Message .container .bottom .message-card .name-zipcode > div,
+#Message .container .bottom .message-card .email-phone > div {
+  flex: 1;
+}
+#Message .container .bottom .message-card input, #Message .container .bottom .message-card textarea, #Message .container .bottom .message-card select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #dfdfdf;
+  resize: none;
+}
+#Message .container .bottom .message-card button {
+  background-color: #0F70B7;
+  color: #fff;
+  padding: 16px 0;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  font-size: 22px;
+  width: 70%;
+}
+
+#Footer {
+  background-color: #111827;
+  padding: 2rem 0;
+}
+#Footer .container .all {
+  display: flex;
+  justify-content: space-between;
+}
+#Footer .container .all .middle, #Footer .container .all .right {
+  flex: 1;
+}
+#Footer .container .all .left {
+  flex: 1.5;
+}
+#Footer .container .all .left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#Footer .container .all .left .logo-footer-div {
+  width: 300px;
+}
+#Footer .container .all .left .logo-footer-div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#Footer .container .all .left span {
+  color: #fff;
+  font-size: 16px;
+  max-width: 320px;
+}
+#Footer .container .all .middle {
+  display: flex;
+  flex-direction: column;
+}
+#Footer .container .all .middle span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+#Footer .container .all .middle .quicklinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#Footer .container .all .middle .quicklinks a {
+  color: #fff;
+}
+#Footer .container .all .right {
+  display: flex;
+  flex-direction: column;
+}
+#Footer .container .all .right > span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+#Footer .container .all .right .contactinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#Footer .container .all .right .contactinfo a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#Footer .container .all .right .contactinfo img {
+  width: 30px;
+  height: 30px;
 }/*# sourceMappingURL=style.css.map */
